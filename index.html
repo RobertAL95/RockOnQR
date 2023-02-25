@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ejemplo de formulario con opciones dinámicas y código QR</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js"></script>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+		<div class="container">
+			<form id="myForm">
+				<label for="seleccion">Selecciona una opción:</label>
+				<select id="seleccion" name="seleccion">
+					<option value="vip">VIP</option>
+					<option value="consumo">Consumo</option>
+					<option value="general">General</option>
+				</select>
+				<div id="numeroDiv">
+					<label for="numero">Selecciona un número:</label>
+					<select id="numero" name="numero">
+						<option value="">Selecciona una opción primero</option>
+					</select>
+				</div>
+				<button type="submit">Generar</button>
+			</form>
+			<div class="imgs">
+				<img src="./src/ENTRADA_ROCK-ON_ESPECIAL.png" alt="" class="imgEntrace">
+			<div id="qrcode" class="qr"></div>
+			</div>
+		</div>
+<<<<<<< HEAD
+	<script defer src="Index.js"></script>
+=======
+		<button type="submit">Enviar</button>
+	</form>
+	<div id="qrcode"></div>
+	<script defer src="index.js"></script>
+>>>>>>> 13e4a4db0e7e948756b1aef993331c8c771ff784
+
+</body>
+</html>
