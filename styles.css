@@ -26,8 +26,14 @@ body{
     height: 70%;
     border: 1px solid blue;
     border-radius: 20px;
-
+    position: relative;
 } 
+
+img {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
 
 .imgEntrace{
     width: 100%;
@@ -35,11 +41,14 @@ body{
     border-radius: 20px;
 }
 
-.qr{
-    border-radius: 1px;
+.qr img{
+    bottom: 45px;
+    width: 70px;
+    height: 70px;
+    right: 40px;
 }
 
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
     .qr img{
     position: fixed;
     width: 80px;
@@ -69,4 +78,4 @@ body{
 }
     }
     
-  }
+  } */
