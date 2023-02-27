@@ -4,11 +4,12 @@
 	<meta charset="UTF-8">
 	<title>Rock on QR</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+			<h1>Administacion</h1>
 		<div class="container">
-<!-- 			<h3>Administrador</h3> -->
 			<form id="myForm">
 				<label for="seleccion">Selecciona una opción:</label>
 				<select id="seleccion" name="seleccion">
@@ -22,12 +23,14 @@
 						<option value="">Selecciona una opción primero</option>
 					</select>
 				</div>
-				<button type="submit">Generar</button>
+				<button type="submit">Generar entrada</button>
 			</form>
-			<div class="imgs">
-				<img src="./src/ENTRADA_ROCK-ON_ESPECIAL.png" alt="" class="imgEntrace">
-			<div id="qrcode" class="qr"></div>
+			<div id="imgs" class="imgs">
+				<img id="entrada" src="./src/ENTRADA_ROCK-ON_ESPECIAL.png" alt="" class="imgEntrace">
+				<div id="qrcode" class="qr"></div>
 			</div>
+			<button id="capture"> Descargar</button>
+
 		</div>
 	<script defer src="Index.js"></script>
 <!-- 		<button type="submit">Enviar</button> -->

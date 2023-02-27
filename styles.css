@@ -6,25 +6,39 @@ html{
 
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(./src/fondo2.png);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+    height: 700px;
 }
+
 
 .container{
     display: flex;
     height: 350px;
     width: 800px;
-    border: 1px solid blue;
+    background-color: rgb(42, 40, 40);
+    border: 5px solid #494343;
     border-radius: 20px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-
+select{
+    /* background-color: rgb(133, 129, 129); */
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 26px;
+}
 .imgs{
     width: 80%;
     height: 70%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     border-radius: 20px;
     position: relative;
 } 
@@ -39,6 +53,7 @@ img {
     width: 100%;
     height: 100%;
     border-radius: 20px;
+    border: 2px solid white;
 }
 
 .qr img{
@@ -46,6 +61,24 @@ img {
     width: 70px;
     height: 70px;
     right: 40px;
+}
+
+form {
+    margin-bottom: 20px;
+    display: flex;
+    /* flex-direction: row; */
+    width: 95%;
+    justify-content: space-evenly;
+    /* background-color: azure; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+form option{
+    cursor: pointer;
+}
+form button{
+    border: none;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 
 /* @media screen and (min-width: 992px) {
